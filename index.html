@@ -34,11 +34,13 @@
                             </a>
                         </li>
                     </nav>
-                    <button class="header__switch-theme">
-                        <img src="./static/light.svg" alt="Switch Light">
-                    </button>
-                    <div class="header__get-started-btn-block">
-                        <a href="#" class="header__get-started-btn">Get started</a>
+                    <div class="header__buttons">
+                        <button class="header__switch-theme" id="switch-theme">
+                            <img src="./static/light.svg" alt="Switch Light">
+                        </button>
+                        <div class="header__get-started-btn-block">
+                            <a href="#" class="header__get-started-btn">Get started</a>
+                        </div>
                     </div>
                 </section>
             </article>
@@ -60,20 +62,20 @@
                         </div>
 
                         <div class="main__avatar-block">
-                            <div class="main__avatar-1">
-                                <img src="./static/img 1.png" alt="Avatar">
+                            <div class="main__avatar-1 main__avatar">
+                                <img src="./static/Ellipse 2.png" alt="Avatar">
                             </div>
-                            <div class="main__avatar-2">
-                                <img src="./static/img 2.png" alt="Avatar">
+                            <div class="main__avatar-2 main__avatar">
+                                <img src="./static/Ellipse 2-1.png" alt="Avatar">
                             </div>
-                            <div class="main__avatar-3">
-                                <img src="./static/img 3.png" alt="Avatar">
+                            <div class="main__avatar-3 main__avatar">
+                                <img src="./static/Ellipse 2-2.png" alt="Avatar">
                             </div>
-                            <div class="main__avatar-4">
-                                <img src="./static/img 4.png" alt="Avatar">
+                            <div class="main__avatar-4 main__avatar">
+                                <img src="./static/Ellipse 2-3.png" alt="Avatar">
                             </div>
-                            <div class="main__avatar-5">
-                                <img src="./static/img 5.png" alt="Avatar">
+                            <div class="main__avatar-5 main__avatar">
+                                <img src="./static/Ellipse 2-4.png" alt="Avatar">
                             </div>
                         </div>
                         <p class="main__avatar-p">Popular bots use Crypto Pay</p>
@@ -343,32 +345,32 @@
         <footer class="footer">
             <article class="container">
                 <section class="footer__content">
-                    <div class="footer__logo-info">
+                    <div class="footer__content-block">
                         <a class="footer__logo-block">
                             <img src="./static/logo.svg" alt="Logo CryptoPay" class="footer__logo">
                         </a>
-                        <p class="footer__info-p">©2023 Crypto Bot</p>
+                        <nav class="footer__nav-block">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Use cases
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    Features
+                                </a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">
+                                    How to start
+                                </a>
+                            </li>
+                        </nav>
+                        <div class="footer__get-started-btn-block">
+                            <a href="#" class="footer__get-started-btn">Get started</a>
+                        </div>
                     </div>
-                    <nav class="footer__nav-block">
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">
-                                Use cases
-                            </a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">
-                                Features
-                            </a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="#" class="footer__nav-link">
-                                How to start
-                            </a>
-                        </li>
-                    </nav>
-                    <div class="footer__get-started-btn-block">
-                        <a href="#" class="footer__get-started-btn">Get started</a>
-                    </div>
+                    <p class="footer__info-p">©2023 Crypto Bot</p>
                 </section>
             </article>
         </footer>
@@ -376,83 +378,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js" integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
-        const swiper = new Swiper('.swiper', {
-            on: {
-                slideChange: function () {
-                var currentSlide = swiper.activeIndex + 1;
-                document.getElementById('current-slide').textContent = '0' + currentSlide;
-                },
-            },
-            // Optional parameters
-            direction: 'vertical',
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            parallax:true,
-            mousewheel: {
-                mousewheelControl: true,
-                eventsTarget: '.usecases__content',
-                forceToAxis: true,
-                releaseOnEdges: true,
-            }
-        });
-
-        const animationApp = document.querySelector('.features-block__app-block');
-        const animationExchange = document.querySelector('.features-block__exchange-block');
-        const animationStat = document.querySelector('.features-block__stat-block')
-        const animationSendCoins = document.querySelector('.features-block__send-coins');
-        const animationAnonymous = document.querySelector('.features-block__anonymous');
-        const videoApp = document.getElementById('app-video');
-        const videoExchange = document.getElementById('exchange-video');
-        const videoStat = document.getElementById('stat-video');
-        const videoSendCoins = document.getElementById('send-coins-video');
-        const videoAnonymous = document.getElementById('anonymous-video');
-
-
-        animationApp.addEventListener('mouseenter', () => {
-            videoApp.play();
-        });
-
-        animationApp.addEventListener('mouseleave', () => {
-            videoApp.pause();
-        });
-
-        animationExchange.addEventListener('mouseenter', () => {
-            videoExchange.play();
-        });
-
-        animationExchange.addEventListener('mouseleave', () => {
-            videoExchange.pause();
-        });
-
-        animationStat.addEventListener('mouseenter', () => {
-            videoStat.play();
-        });
-
-        animationStat.addEventListener('mouseleave', () => {
-            videoStat.pause();
-        });
-
-        animationSendCoins.addEventListener('mouseenter', () => {
-            videoSendCoins.play();
-        });
-
-        animationSendCoins.addEventListener('mouseleave', () => {
-            videoSendCoins.pause();
-        });
-
-        animationAnonymous.addEventListener('mouseenter', () => {
-            videoAnonymous.play();
-        });
-
-        animationAnonymous.addEventListener('mouseleave', () => {
-            videoAnonymous.pause();
-        });
-
-    </script>
+    <script type="module" src="./scripts/scripts.js"></script>
 </body>
 </html>
