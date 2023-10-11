@@ -103,3 +103,205 @@ function addDarkClass() {
 }
 
 addDarkClass();
+
+
+
+gsap.from(".header", {
+    opacity: 0,
+    duration: 1,
+});
+
+gsap.from(".main__h1-title, .main__paragraph, .main__get-started-btn-block, .main__avatar, .main__avatar-p", {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+});
+
+gsap.from(".main__second-col", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+});
+
+gsap.from(".features-block__currencies-content, .features-block__currencies-h3, .features-block__currencies-paragraph, .eth, .usdt, .ton, .btc, .trx, .ltc, .usdc, .bnb", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".features-block__content",
+        start: "top center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".features-block__app-block, .features-block__app-animation, .features-block__app-h3, .features-block__app-paragraph", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".features-block__content",
+        start: "top+=250px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".features-block__stat-block, .features-block__stat-animation, .features-block__stat-h3, .features-block__stat-paragraph", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".features-block__content",
+        start: "top+=450px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".features-block__exchange-block, .features-block__exchange-animation, .features-block__exchange-h3, .features-block__exchange-paragraph", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".features-block__content",
+        start: "top+=550px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".features-block__send-coins, .features-block__send-coins-animation, .features-block__send-coins-h3, .features-block__send-coins-paragraph", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".features-block__content",
+        start: "top+=1150px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".features-block__anonymous, .features-block__anonymous-animation, .features-block__anonymous-h3, .features-block__anonymous-paragraph", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".features-block__content",
+        start: "top+=1150px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".quick-start__title", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".quick-start",
+        start: "top+=50px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".quick-start__step-1-img-block", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".quick-start",
+        start: "top+=190px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".quick-start__step-1-numstep, .quick-start__step-1-h3, .quick-start__step-1-list-item", {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".quick-start",
+        start: "top+=190px center",
+        end: "bottom center",
+    }
+});
+
+
+gsap.from(".quick-start__step-2-img-block", {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".quick-start",
+        start: "top+=590px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".quick-start__step-2-numstep, .quick-start__step-2-h3, .quick-start__step-2-p, .quick-start__step-2-list-item", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".quick-start",
+        start: "top+=590px center",
+        end: "bottom center",
+    }
+});
+
+
+gsap.from(".quick-start__step-3-img-block", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".quick-start",
+        start: "top+=1190px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".quick-start__step-3-numstep, .quick-start__step-3-h3, .quick-start__step-3-p, .quick-start__step-3-list-item", {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".quick-start",
+        start: "top+=1190px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".api-block__content, .api-block__h2, .api-block__p, .api-block__button-block, .api-block__img-block, .api-block__img-block-mobile", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".api",
+        start: "top+=90px center",
+        end: "bottom center",
+    }
+});
+
+gsap.from(".community-block__h2, .community-block__p, .community-block__libraries-js, .community-block__libraries-net, .community-block__libraries-php, .community-block__libraries-python, .community-block__libraries-go, .community-block__button-block", {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".community-block",
+        start: "top+=30px center",
+        end: "bottom center",
+    }
+});

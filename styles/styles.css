@@ -141,6 +141,7 @@ body {
     background-color: var(--bg);
     font-size: 14px;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 a {
     background-color: transparent;
@@ -428,7 +429,7 @@ html.dark .step-block__numstep{
 
 /*FEATURES*/
 .features {
-    margin-top: 144px;
+    padding-top: 144px;
 }
 .features-block__content {
     display: flex;
@@ -622,7 +623,7 @@ html.dark .step-block__numstep{
 
 /*API*/
 .api {
-    margin-top: 120px;
+    padding-top: 120px;
 }
 .api-block__content {
     position: relative;
@@ -1247,6 +1248,9 @@ html.dark .step-block__numstep{
 @media (max-width: 380px){
     .community-block__libraries{
         gap: 0;
+    }
+    .community-block__libraries-go{
+        margin-left: 10px;
     }
     .features-block__stat-animation,
     .features-block__anonymous-animation{
