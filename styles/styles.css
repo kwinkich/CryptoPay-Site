@@ -1056,7 +1056,7 @@ html.dark .step-block__numstep{
     }
 }
 
-@media (max-width: 580px){
+@media (max-width: 585px){
     .libs-block{
         width: 104px;
     }
@@ -1110,12 +1110,12 @@ html.dark .step-block__numstep{
         left: 20% !important;
     }
     .current-slide{
-        top: 829px;
+        top: 823px;
         left: 60px;
     }
     .end-slide{
-        top: 829px;
-        left: 350px;
+        top: 823px;
+        left: 380px;
     }
     .swiper{
         height: 850px;
@@ -1160,19 +1160,19 @@ html.dark .step-block__numstep{
         width: 40px !important;
     }
     .swiper{
-        height: 810px;
+        height: 810px !important;
     }
     .swiper-pagination{
         top: 790px !important;
-        left: 30% !important;
+        left: 28% !important;
     }
     .current-slide{
-        top: 789px;
+        top: 783px;
         left: 70px;
     }
     .end-slide{
-        top: 789px;
-        left: 290px;
+        top: 783px;
+        left: 310px;
     }
     .api-block__img-block{
         display: none;
@@ -1220,15 +1220,6 @@ html.dark .step-block__numstep{
     .main__second-col{
         max-width: 300px;
     }
-    .swiper-pagination{
-        left: 25% !important;
-    }
-    .current-slide{
-        left: 40px;
-    }
-    .end-slide{
-        left: 250px;
-    }
 }
 
 @media (max-width: 430px){
@@ -1239,6 +1230,17 @@ html.dark .step-block__numstep{
     }
     .features-block__currencies-crypto-name{
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .current-slide{
+        top: 783px;
+        left: 60px;
+    }
+    .end-slide{
+        top: 783px;
+        left: 290px;
     }
 }
 
@@ -1301,5 +1303,14 @@ html.dark .step-block__numstep{
 @media (max-width: 355px){
     .api-block__button{
         font-size: var(--16-px);
+    }
+}
+
+@media (max-width: 330px){
+    .swiper-pagination-bullet:not(:last-child){
+        margin-right: 10px !important;
+    }
+    .end-slide{
+        left: 220px;
     }
 }
