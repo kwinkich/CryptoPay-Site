@@ -1292,6 +1292,9 @@ html.dark .step-block__numstep{
 }
 
 @media (max-width: 375px){
+    .get-started-btn{
+        padding: 15px 20px;
+    }
     .current-slide{
         left: 30px;
     }
