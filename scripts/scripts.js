@@ -99,8 +99,8 @@ function addDarkClass() {
         videoExchange.src = `./static/Real-timeexchange${darkVideoSuffix}.mp4`;
         videoSendCoins.src = `./static/Send coins to users${darkVideoSuffix}.mp4`;
         videoApp.poster = `./static/Group 5116${darkVideoSuffix}.png`;
-        videoExchange.poster = `./static/features-block_img-1${darkVideoSuffix}.png`;
-        videoSendCoins.poster = `./static/img_commission${darkVideoSuffix}.png`;
+        videoExchange.poster = `./static/features-block_img${darkVideoSuffix}.png`;
+        videoSendCoins.poster = `./static/send-coins${darkVideoSuffix}.png`;
         switchButton.src = `./static/${isDarkTheme ? 'dark' : 'light'}.svg`;
     } catch (err) {}
 }
