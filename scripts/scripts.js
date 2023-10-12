@@ -95,9 +95,9 @@ function addDarkClass() {
         
         htmlElement.classList.toggle('dark', isDarkTheme);
         
-        videoApp.src = `./static/One-click-to-start${darkVideoSuffix}.webm`;
-        videoExchange.src = `./static/Real-timeexchange${darkVideoSuffix}.webm`;
-        videoSendCoins.src = `./static/Send-coins-to-users${darkVideoSuffix}.webm`;
+        videoApp.src = `./static/One click to start${darkVideoSuffix}.mp4`;
+        videoExchange.src = `./static/Real-timeexchange${darkVideoSuffix}.mp4`;
+        videoSendCoins.src = `./static/Send coins to users${darkVideoSuffix}.mp4`;
         switchButton.src = `./static/${isDarkTheme ? 'dark' : 'light'}.svg`;
     } catch (err) {}
 }

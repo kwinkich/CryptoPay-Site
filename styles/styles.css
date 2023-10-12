@@ -142,8 +142,12 @@ body {
     font-size: 14px;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
+
+.wrapper {
+    overflow: hidden;
+}
+
 a {
     background-color: transparent;
     text-decoration: none;
@@ -680,10 +684,6 @@ html.dark .step-block__numstep{
 .api-block__img-block-mobile {
     display: none;
 }
-
-
-
-/* COMMUNITY*/
 .community-block {
     background-color: var(--white-text-color);
     border-radius: 0px 0px 30px 30px;
@@ -756,7 +756,7 @@ html.dark .step-block__numstep{
     background-color: var(--dark-blue);
 }
 .footer__content{
-    padding: 150px 0px 40px 0px;
+    padding: 60px 0px 40px 0px;
 }
 .footer__content-block {
     display: flex;
