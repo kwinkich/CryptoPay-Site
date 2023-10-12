@@ -98,6 +98,9 @@ function addDarkClass() {
         videoApp.src = `./static/One click to start${darkVideoSuffix}.mp4`;
         videoExchange.src = `./static/Real-timeexchange${darkVideoSuffix}.mp4`;
         videoSendCoins.src = `./static/Send coins to users${darkVideoSuffix}.mp4`;
+        videoApp.poster = `./static/Group 5116${darkVideoSuffix}.png`;
+        videoExchange.poster = `./static/features-block_img-1${darkVideoSuffix}.png`;
+        videoSendCoins.poster = `./static/img_commission${darkVideoSuffix}.png`;
         switchButton.src = `./static/${isDarkTheme ? 'dark' : 'light'}.svg`;
     } catch (err) {}
 }
