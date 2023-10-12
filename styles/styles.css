@@ -145,7 +145,7 @@ body {
 }
 
 .wrapper {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -687,7 +687,7 @@ html.dark .step-block__numstep{
 .community-block {
     background-color: var(--white-text-color);
     border-radius: 0px 0px 30px 30px;
-    margin-top: 144px;
+    padding-top: 144px;
 }
 .community-block__content {
     display: flex;
@@ -749,10 +749,6 @@ html.dark .step-block__numstep{
 
 /*FOOTER*/
 .footer {
-    position: absolute;
-    bottom: -272px;
-    left: 0;
-    right: 0;
     background-color: var(--dark-blue);
 }
 .footer__content{
